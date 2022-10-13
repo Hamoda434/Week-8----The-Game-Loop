@@ -21,11 +21,12 @@ public class LightOperator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if...
+        if(isRedCubeDetected){
         pointLight.enabled = true;
-
-        // else
+        }
+        else{
         pointLight.enabled = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
